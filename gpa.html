@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic GPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <a href="gpa.html"><button>GPA Calculator</button></a>
+    <a href="relative.html"><button>Relative Grading</button></a>
+    <h1>GPA Calculator</h1>
+    <div id="courseContainer">
+      <div class="course-row">
+        <input type="text" class="course-name" placeholder="Course Name (optional)">
+        <input type="number" class="course-credits" placeholder="Credits" min="1">
+        <select class="course-grade">
+          <option value="">Grade</option>
+          <option value="4.0">A</option>
+          <option value="3.7">A-</option>
+          <option value="3.3">B+</option>
+          <option value="3.0">B</option>
+          <option value="2.7">B-</option>
+          <option value="2.3">C+</option>
+          <option value="2.0">C</option>
+          <option value="1.7">C-</option>
+          <option value="1.0">D</option>
+          <option value="0.0">F</option>
+        </select>
+      </div>
+    </div>
+    <button id="addCourseBtn">+ Add More Courses</button>
+    <div>
+      <button id="calculateBtn">Calculate</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+    <p id="gpaResult"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
